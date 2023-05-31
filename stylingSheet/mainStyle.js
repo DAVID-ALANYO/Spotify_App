@@ -1,4 +1,5 @@
 import  {StyleSheet} from "react-native"
+import { withTheme } from "react-native-elements";
 
   const styles =StyleSheet.create ({
 
@@ -80,11 +81,12 @@ footer_section:{
       
       },
       banner:{
-        backgroundColor:'gray',
+        backgroundColor:'#171313',
         margin:5,
         flexDirection:'row',
         width:200,
         borderRadius:4,
+      
        
 
       },
@@ -97,18 +99,37 @@ footer_section:{
         },
         note:{
           color:'white',
-       alignItems:true,
-       margin:10,
-       fontWeight:'500'
+          margin:10,
+         fontWeight:'500'
     
 
         },
         headings:{
-          fontSize:20,
+          fontSize:25,
           color:'white',
-          fontWeight:'600',
-          margin:12
+          fontWeight:'800',
+           margin:10,
+          
+        },
+        banner2:{
+          width:120,
+          height:160,
+          alignItems:'center',
+        },
+        banner2s:{
+          color:'white',
+          fontWeight:"600",
+          fontSize:14,
+          textShadowColor:'black',
+          marginTop:5,
+        },
+        subText:{
+         color:'white',
+         marginLeft:10,
+         
         }
+        
+        
     
     
 

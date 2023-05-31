@@ -23,13 +23,13 @@ export default function Home(){
       
         let greeting;
       
-        if (time < '00:00 AM' && time <='12:00') {
-          greeting = 'Good morning';
-        } else if (time >= '12:00' && time <='17:00') {
+        if (time >='00:00' && time < '12:00') {
+         greeting = 'Good morning';
+        } else if (time = '12:00' && time <='17:00') {
           greeting = 'Good afternoon';
-        } else {
-          greeting = 'Good evening';
-        }
+         } else{
+          greeting= 'Good Evening'
+         }
         return(
 
     <SafeAreaView style={{flex:1,backgroundColor:'black'}}>
@@ -68,45 +68,83 @@ export default function Home(){
 {/* Ada Ehi */}
 <View style={styles.card3}>
 <View style={styles.banner}>
-<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
+<Image source={require("../Imagebanner/blacko.jpeg")} style={{width:50,height:50}} />
 <Text style={styles.note}> Ada Ehi{'\n'} Only you Mix</Text>
 </View>
 <View style={styles.banner}>
-<Image source={require("../Imagebanner/MercyOc.jpeg")}  style={{width:50,height:50}} />
+<Image source={require("../Imagebanner/ada.jpeg")}  style={{width:50,height:50}} />
 <Text style={styles.note}> Alan walker {'\n'} </Text>
 </View>
 </View>
 {/* Ada Ehi */}
 <View style={styles.card3}>
 <View style={styles.banner}>
-<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
+<Image source={require("../Imagebanner/alanwalker.jpeg")} style={{width:50,height:50}} />
 <Text style={styles.note}> Ada Ehi{'\n'} Only you Mix</Text>
 </View>
 <View style={styles.banner}>
-<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
+<Image source={require("../Imagebanner/joe_metel.jpeg")} style={{width:50,height:50}} />
 <Text style={styles.note}> Alan walker {'\n'} </Text>
 </View>
 </View>
-<Text style={styles.headings} >Resenntly played </Text>
-{/* Sliding left */}
+
+<Text style={styles.headings} >Recently played </Text>
+{/* Sliding left  Recently */}
 <ScrollView showsHorizontalScrollIndicator={false}horizontal={true}>
+
 <View style={styles.card3}>
-<View style={styles.banner}>
-<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
-<Text style={styles.note}> Ada Ehi{'\n'} Only you Mix</Text>
+<View style={styles.banner2}>
+<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:100,height:100}} />
+<Text style={styles.banner2s}> Nathaniel Bassey</Text>
 </View>
-<View style={styles.banner}>
-<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
-<Text style={styles.note}> Alan walker {'\n'} </Text>
+<View style={styles.banner2}>
+<Image source={require("../Imagebanner/alanwalker.jpeg")} style={{width:100,height:100}} />
+<Text style={styles.banner2s}> Alan Walker</Text>
 </View>
-<View style={styles.banner}>
-<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
-<Text style={styles.note}> Alan walker {'\n'} </Text>
+
+<View style={styles.banner2}>
+<Image source={require("../Imagebanner/mashmello.jpeg")} style={{width:100,height:100}} />
+<Text style={styles.banner2s}> Mash Mellow</Text>
 </View>
+
+<View style={styles.banner2}>
+<Image source={require("../Imagebanner/blacko2.jpeg")} style={{width:100,height:100}} />
+<Text style={styles.banner2s}> Blaco -Soja</Text>
+</View>
+
+<View style={styles.banner2}>
+<Image source={require("../Imagebanner/mog.jpeg")} style={{width:100,height:100}} />
+<Text style={styles.banner2s}> Mog-Music</Text>
+</View>
+
+</View>
+</ScrollView>
+
+<Text style={styles.headings} > Try something else </Text>
+{/* Sliding left  Recently */}
+<ScrollView showsHorizontalScrollIndicator={false}horizontal={true}>
+
+<View style={styles.card3}>
+<View style={styles.banner3}>
+<Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:150,height:150,margin:10}} />
+<Text style={styles.subText}> Ed Sheeran,Rema, {'\n'}Burna Boy,Arya starr,... </Text>
+</View>
+
+
 </View>
 </ScrollView>
 </ScrollView>
 </View>
+
+
+
+
+
+
+
+
+
+
 
 
            {/* =================================++++Footer Section ================= */}
