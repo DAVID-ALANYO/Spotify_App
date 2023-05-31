@@ -28,7 +28,7 @@ export default function App ({navigation}) {
 
     <NavigationContainer>
       <Stack.Navigator initialRouteName={Home}>
-      <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
+      <Stack.Screen name="Home" component={Home} options={{headerShown:false}} />
       <Stack.Screen name="Search" component={Search} options={{headerShown: false}}/>
       <Stack.Screen name="Library" component={Library} options={{headerShown: true}}/>
       <Stack.Screen name="Premium" component={Premium} options={{headerShown: false}}/>
