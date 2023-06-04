@@ -127,6 +127,31 @@ footer_section:{
          color:'white',
          marginLeft:10,
          
+        },
+        rounded:{
+          width:70,
+          height:70,
+          borderRadius:100,
+          resizeMode:'contain'
+         
+
+          
+        },
+        roundedone:{
+          justifyContent:'flex-start',
+        flexDirection:'row',
+        alignItems:'center',
+        margin:15
+        },
+        roundText:{
+          color:'#989898',
+          margin:5
+        },
+        roundBigText:{
+          fontSize:20,
+          color:'white',
+          fontWeight:'600'
+
         }
         
         
