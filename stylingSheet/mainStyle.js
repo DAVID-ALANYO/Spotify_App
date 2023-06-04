@@ -94,7 +94,7 @@ footer_section:{
         justifyContent:'space-evenly',
         flexDirection:'row',
         alignItems:'center',
-        marginLeft:5
+        marginLeft:10
   
         },
         note:{
@@ -114,7 +114,9 @@ footer_section:{
         banner2:{
           width:120,
           height:160,
+
           alignItems:'center',
+          margin:8
         },
         banner2s:{
           color:'white',
