@@ -125,7 +125,7 @@ return(
 
 <View style={styles.card3}>
 <View style={styles.banner3}>
-<Image source={require("../Imagebanner/blacko.jpeg")} style={{width:150,height:150,margin:10}} />
+<Image source={require("../Imagebanner/blacko.jpeg")} style={{width:150,height:150,margin:5}} />
 <Text style={styles.subText}> Blacko,Ed Sheeran,Rema, {'\n'}Burna Boy,Arya starr,... </Text>
 </View>
 
