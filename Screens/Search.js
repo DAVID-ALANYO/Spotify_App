@@ -55,11 +55,12 @@ return(
 <View style={styles.search_divide}>
 <View style={[styles.color1,styles.spaces]}>
 <Text style={styles.boxText}>Podcasts</Text>
-<Image source={{uri:'https://images.pexels.com/photos/7751834/pexels-photo-7751834.jpeg?auto=compress&cs=tinysrgb&w=600'}} style={styles.rotate}/>
+<Image source={{uri:'https://images.pexels.com/photos/7751834/pexels-photo-7751834.jpeg?auto=compress&cs=tinysrgb&w=600'}} style={styles.image_rotate}/>
 </View>
-
-<View style={[styles.color1,styles.spaces]}>
+<View style={[styles.color2,styles.spaces]}>
 <Text style={styles.boxText}>Live Events</Text>
+
+
 </View>
 
 </View>

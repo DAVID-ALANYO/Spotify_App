@@ -55,7 +55,7 @@ return(
 
 <View style={styles.card3}>
 <View style={styles.banner}>
-<Image source={require("../Imagebanner/MercyOc.jpeg")} style={{width:50,height:50}} />
+<Image source={require("../Imagebanner/MercyOc.jpeg")} style={{width:50,height:50,}} />
 <Text style={styles.note}> Chimode  {'\n'} Ichimo </Text>
 </View>
 <View style={styles.banner}>

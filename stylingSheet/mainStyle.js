@@ -172,19 +172,26 @@ footer_section:{
         search_divide:{
           justifyContent:'space-evenly',
           flex:1,
-          alignItems:"center",
           flexDirection:'row',
     
           
         },
         spaces:{
-          margin:10
+          margin:10,
+     
+          // justifyContent:'space-between',
+          flexDirection:'row',
+
+
+
         },
        color1:{
         backgroundColor:'#cf3513',
         width:180,
         height:115,
         borderRadius:6,
+        
+        
         
        },
        color2:{
@@ -318,7 +325,19 @@ footer_section:{
         borderRadius:6
        },
 //================================Image Rotate===================================
-//transform: [{rotate: '45deg'}]
+//
+
+image_rotate:{
+width:62,
+height:62,
+marginTop:50,
+borderRadius:10,
+borderColor:'white',
+borderWidth:2
+
+
+
+},
 
 
 
@@ -377,12 +396,13 @@ footer_section:{
         
        },
        boxText:{
-        color:'white',
-        fontSize:18,
-        fontWeight:'600',
+        color:'#ffffff',
+        fontSize:22,
+        fontWeight:'800',
         marginLeft:15,
         marginTop:15
-       }
+       },
+     
         
         
     
