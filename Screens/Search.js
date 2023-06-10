@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { View,Text,Image,TouchableOpacity ,StatusBar,SafeAreaView,ScrollView,} from 'react-native';
 import { Input } from "react-native-elements";
 import { styles } from "../stylingSheet/mainStyle";
+
 // React native Icons
 // import { Icon} from 'react-native-elements';
 // import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -15,19 +16,6 @@ import { styles } from "../stylingSheet/mainStyle";
 export default function Search(){
     const navigation = useNavigation();
     
-    const currents = new Date();
-    const time = currents.toLocaleTimeString('en-US', { hour: '2-digit' });
-   
-  
-    let greeting;
-    
-    if (time >= '00:00' && time <= '12:00') {
-      greeting = 'Good morning';
-    } else if (time >= '12:00' && time <= '17:00') {
-      greeting = 'Good afternoon';
-    } else {
-      greeting = 'Good evening';
-    }
     
         
 return(
@@ -47,20 +35,20 @@ return(
 </View>
 
 </View>
-<Input placeholder="What do you want to listen "  style={styles.searchbar}/>
+<Input placeholder="What do you want to listen "  style={styles.searchbar} inlineImageLeft='search_icon' />
 
 <Text style={{color:'white',fontSize:18,fontWeight:'600'}}>Browse all </Text>
 {/* ================================Boxes for the live music================================ */}
+
 
 <View style={styles.search_divide}>
 <View style={[styles.color1,styles.spaces]}>
 <Text style={styles.boxText}>Podcasts</Text>
 <Image source={{uri:'https://images.pexels.com/photos/7751834/pexels-photo-7751834.jpeg?auto=compress&cs=tinysrgb&w=600'}} style={styles.image_rotate}/>
 </View>
+
 <View style={[styles.color2,styles.spaces]}>
 <Text style={styles.boxText}>Live Events</Text>
-
-
 </View>
 
 </View>
@@ -76,8 +64,6 @@ return(
 </View>
 
 </View>
-
-
 
 <View style={styles.search_divide}>
 <View style={[styles.color5,styles.spaces]}>
@@ -173,16 +159,7 @@ return(
 <View style={[styles.color22,styles.spaces]}>
 <Text style={styles.boxText}>Rock</Text>
 </View>
-</View>
-
-
-
-
-
-
-
-
-
+</View> 
 
 
 

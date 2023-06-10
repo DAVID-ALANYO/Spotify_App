@@ -170,9 +170,13 @@ footer_section:{
 
         },
         search_divide:{
-          justifyContent:'space-evenly',
-          flex:1,
+          // justifyContent:'space-evenly',
+          with:200,
           flexDirection:'row',
+          justifyContent:'space-evenly'
+          
+        
+
     
           
         },
@@ -180,7 +184,7 @@ footer_section:{
           margin:10,
      
           // justifyContent:'space-between',
-          flexDirection:'row',
+          
 
 
 
@@ -339,57 +343,6 @@ borderWidth:2
 
 },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
        searchbar:{
         backgroundColor:'white',
         borderRadius:5,
@@ -404,7 +357,32 @@ borderWidth:2
        },
      
         
-        
+       //Library option 
+       Library_Bar:{
+        justifyContent:'space-between',
+        flexDirection:'row'
+       } ,
+       Library_Bar1:{
+        flexDirection:'row',
+        justifyContent:'space-between'
+
+      
+       } ,
+       detail_bar:{
+       flexDirection:'row',justifyContent:'space-around',
+       },
+       bar:{
+        backgroundColor:'#353131ff',
+        borderRadius:10,
+        width:88,
+        height:30,
+        alignItems:'center',
+        justifyContent:'space-around',
+        margin:20
+
+       },
+       text:{color:'#ffffff'}
+       
     
     
 

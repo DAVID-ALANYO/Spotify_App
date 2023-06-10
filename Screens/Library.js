@@ -1,4 +1,4 @@
-import { View, Text,StatusBar,TouchableOpacity,Image } from 'react-native';
+import { View, Text,StatusBar,TouchableOpacity,Image, ScrollView } from 'react-native';
 import React from 'react';
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "../stylingSheet/mainStyle";
@@ -14,8 +14,38 @@ export default function Search() {
 
 
    <View style={styles.details_section}>
+   <ScrollView style={{backgroundColor:'#ffffffff'}}>
+    <Text>Hello World </Text>
+    <Text>Hello World </Text>
+
+    <Text>Hello World </Text>
+    <Text>Hello World </Text>
+    <Text>Hello World </Text>
+    <Text>Hello World </Text>
+    <Text>Hello World </Text>
+      <Text>Hello World </Text>
+        <Text>Hello World </Text>
+          <Text>Hello World </Text>
+            <Text>Hello World </Text>
+              <Text>Hello World </Text>
+                <Text>Hello World </Text>
+                  <Text>Hello World </Text>
+   </ScrollView>
    
    </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   {/* =================================++++Footer Section ================= */}
    <View style={styles.footer_section}>
