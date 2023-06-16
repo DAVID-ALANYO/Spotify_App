@@ -6,19 +6,18 @@ import { withTheme } from "react-native-elements";
 pages:{
   flex:1
 },
+
 details_section:{
 
   flex:4,
   backgroundColor:'#000000'
 },
 footer_section:{
-  flex:0.55,
-  backgroundColor:'#000000'
+  flex:0.6,
+  backgroundColor:'#000000',
+ 
+  
 },
-
-
-
-
     mainview:{
       backgroundColor:'#0a0a0a',
       flex:1,
@@ -353,23 +352,24 @@ borderWidth:2
         fontSize:22,
         fontWeight:'800',
         marginLeft:15,
-        marginTop:15
+        marginTop:15,
        },
      
         
        //Library option 
+
        Library_Bar:{
         justifyContent:'space-between',
-        flexDirection:'row'
-       } ,
+        flexDirection:'row',
+       },
+
        Library_Bar1:{
         flexDirection:'row',
-        justifyContent:'space-between'
-
-      
-       } ,
+        justifyContent:'space-between',
+       },
        detail_bar:{
-       flexDirection:'row',justifyContent:'space-around',
+       flexDirection:'row',
+       justifyContent:'space-around',
        },
        bar:{
         backgroundColor:'#353131ff',
@@ -378,10 +378,22 @@ borderWidth:2
         height:30,
         alignItems:'center',
         justifyContent:'space-around',
-        margin:20
+        margin:12,
 
        },
-       text:{color:'#ffffff'}
+
+       text:{color:'#ffffff'},
+       banner3l:{flexDirection:'row',justifyContent:'space-between'},
+       subTextl:{color:'white'},
+       Library_Bar2:{
+        margin:4,
+        flexDirection:'row',
+        alignItems:"center"
+       },
+       manu:{color:'white',fontSize:29}
+
+
+
        
     
     

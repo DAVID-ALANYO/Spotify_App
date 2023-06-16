@@ -1,12 +1,15 @@
-import { View, Text,StatusBar,TouchableOpacity,Image, ScrollView } from 'react-native';
-import React from 'react';
+import { View, Text,TouchableOpacity,Image, ScrollView } from 'react-native';
+import React, {useState,useEffect} from 'react';
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "../stylingSheet/mainStyle";
+import FooterBar from '../Screens/FooterBar';
 
 
 
 export default function Search() {
     const navigation = useNavigation();
+
+    
   return (
     
               
@@ -14,82 +17,94 @@ export default function Search() {
 
 
    <View style={styles.details_section}>
-   <ScrollView style={{backgroundColor:'#ffffffff'}}>
-    <Text>Hello World </Text>
-    <Text>Hello World </Text>
+   <ScrollView style={{backgroundColor:'#040404ff'}}>
+   <View style={styles.Library_Bar}>
+      
+      <View style={styles.Library_Bar1}>
+      <TouchableOpacity>
+        <Image source={require('../Images/spotify.png')} style={{width:30,height:30,borderRadius:100,resizeMode:'contain',marginRight:10,backgroundColor:'green'}}/>
+      </TouchableOpacity>
 
-    <Text>Hello World </Text>
-    <Text>Hello World </Text>
-    <Text>Hello World </Text>
-    <Text>Hello World </Text>
-    <Text>Hello World </Text>
-      <Text>Hello World </Text>
-        <Text>Hello World </Text>
-          <Text>Hello World </Text>
-            <Text>Hello World </Text>
-              <Text>Hello World </Text>
-                <Text>Hello World </Text>
-                  <Text>Hello World </Text>
-   </ScrollView>
-   
-   </View>
+       <Text style={{color:'white',fontSize:20,fontWeight:'700'}}>Your Library </Text>
 
+      </View>
 
-
-
-
-
-
-
-
-
-
-
-
-  
-  {/* =================================++++Footer Section ================= */}
-   <View style={styles.footer_section}>
-  
-   <View style={styles.footer_bar} > 
-       <View style={styles.icon_position}>
-  
-       <TouchableOpacity onPress={()=> navigation.navigate("Home")} >
-       <Image style={styles.footer_images} source={require('../Images/home.png')}/>
-        <Text style={styles.footer_text}> Home </Text>
-       </TouchableOpacity>
-       </View>
-     
-       <View style={styles.icon_position}>
-       <TouchableOpacity onPress={() => navigation.navigate('Search')
-       } >
-       <Image style={styles.footer_images} source={require('../Images/search.png')}/>
-        <Text style={styles.footer_text}>Search</Text>
-         
-       </TouchableOpacity>
-       </View>
-  
-       <View style={styles.icon_position}>
-       <TouchableOpacity  onPress={() => navigation.navigate('Library')}> 
-       <Image style={styles.footer_images} source={require('../Images/books.png')}/>
-        <Text style={styles.footer_text}>Library</Text>  
-       </TouchableOpacity>
-       </View>
-  
-       <View style={styles.icon_position}>
-       <TouchableOpacity onPress={() => navigation.navigate('Premium')}>
-       <Image style={styles.footer_images} source={require('../Images/spotify.png')}/>
-        <Text style={styles.footer_text}>Premium</Text>
-         
-       </TouchableOpacity>
-  
-       </View>
-  
+      <View style={styles.Library_Bar1}>
+      <TouchableOpacity>
+        <Image source={require('../Images/search.png')} style={{width:25,height:25,marginRight:15}}/>
+        </TouchableOpacity>
        
       </View>
+      </View>
+
+
+<View style={styles.Library_Bar2}>
+      <TouchableOpacity>
+        <Image source={require('../Imagebanner/david.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
+      </TouchableOpacity>
+       <View style={{margin:15,}}>
+       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>David Alanyo </Text>
+       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}> Developer </Text>
    
+    </View>
+</View>
+<View style={styles.Library_Bar2}>
+      <TouchableOpacity>
+        <Image source={require('../Imagebanner/ada.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
+      </TouchableOpacity>
+       <View style={{margin:15,}}>
+       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>Ada Ehi</Text>
+       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}>Artist </Text>
+    </View>
+</View>
+
+<View style={styles.Library_Bar2}>
+      <TouchableOpacity>
+        <Image source={require('../Imagebanner/blacko.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
+      </TouchableOpacity>
+       <View style={{margin:15,}}>
+       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>Black Sherrif</Text>
+       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}>Artist </Text>
+    </View>
+</View>
+
+<View style={styles.Library_Bar2}>
+      <TouchableOpacity>
+        <Image source={require('../Imagebanner/alanwalker.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
+      </TouchableOpacity>
+       <View style={{margin:15,}}>
+       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>Alan Walker</Text>
+       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}>Artist </Text>
+    </View>
+</View>
+
+<View style={styles.Library_Bar2}>
+      <TouchableOpacity>
+        <Image source={require('../Imagebanner/ada.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
+      </TouchableOpacity>
+       <View style={{margin:15,}}>
+       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>Ada Ehi</Text>
+       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}>Artist </Text>
+    </View>
+</View>
+<View style={styles.Library_Bar2}>
+      <TouchableOpacity>
+        <Image source={require('../Imagebanner/mashmello.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
+      </TouchableOpacity>
+       <View style={{margin:15,}}>
+       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>Ada Ehi</Text>
+       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}>Artist </Text>
+    </View>
+</View>
+
+   </ScrollView>
+   </View>
+
+  
+    <FooterBar/>
+
     
    </View>
-     </View>
    
   )
 }
