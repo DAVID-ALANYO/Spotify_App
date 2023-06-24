@@ -80,11 +80,14 @@ footer_section:{
       
       },
       banner:{
-        backgroundColor:'#171313',
+        backgroundColor:'#641f1f',
         margin:5,
         flexDirection:'row',
-        width:200,
+        width:180,
         borderRadius:4,
+        
+        
+        
       
        
 
@@ -93,7 +96,7 @@ footer_section:{
         justifyContent:'space-evenly',
         flexDirection:'row',
         alignItems:'center',
-        
+       
   
         },
         note:{
@@ -390,12 +393,24 @@ borderWidth:2
         flexDirection:'row',
         alignItems:"center"
        },
-       manu:{color:'white',fontSize:29}
+       manu:{color:'white',fontSize:29},
 
 
 
        
-    
+  modeEffect :{
+  flex:1,
+  backgroundColor:'#041a23',
+  justifyContent:'center',
+  flexDirection:'row'
+  
+  },
+  slidein:{
+    width:350,
+    height:350,
+    borderRadius:10
+   
+  }
     
 
  

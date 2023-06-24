@@ -1,13 +1,15 @@
 //Befor you can 
 import { useNavigation } from "@react-navigation/native";
-import React, { Component } from "react";
-import { View,Text,Image,TouchableOpacity ,StatusBar,SafeAreaView,ScrollView} from 'react-native';
+import React, { Component,useState } from "react";
+import { View,Text,Image,TouchableOpacity ,StatusBar,SafeAreaView,ScrollView,Modal,Button, TouchableHighlight} from 'react-native';
 import { styles } from "../stylingSheet/mainStyle";
 import FooterBar from '../Screens/FooterBar';
+
+
+
 // React native Icons
 // import { Icon} from 'react-native-elements';
 // import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
 
 
 
@@ -28,6 +30,10 @@ export default function Home(){
     } else {
       greeting = 'Good evening';
     }
+    
+    const [visible ,setVisible] = useState(false)
+    const show = () => setVisible(true);
+    const hide = () =>setVisible(false);
     
         
 return(
@@ -55,10 +61,40 @@ return(
 </View>
 
 <View style={styles.card3}>
+<TouchableOpacity
+onPress={show}
+>
+
 <View style={styles.banner}>
 <Image source={require("../Imagebanner/MercyOc.jpeg")} style={{width:50,height:50,}} />
 <Text style={styles.note}> Chimode  {'\n'} Ichimo </Text>
 </View>
+
+
+<Modal
+  visible={visible}
+  animationType={"slide"}
+  onRequestClose={true}
+  onSwipeComplete={() => hide()}
+
+  
+ >
+ <StatusBar barStyle="light-content" hidden={true} />
+ <View style={styles.modeEffect}>
+ 
+ <SafeAreaView>
+ <Button title="🔽" onPress={hide}/>
+<Image source={require('../Imagebanner/ada.jpeg')} style={styles.slidein}/>
+<Text> Hi</Text>
+
+</SafeAreaView>
+</View>
+ </Modal>
+
+
+
+
+</TouchableOpacity>
 <View style={styles.banner}>
 <Image source={require("../Imagebanner/Nathaniel.jpg")} style={{width:50,height:50}} />
 <Text style={styles.note}> Nathaniel Bassey  {'\n'} you made it</Text>
@@ -215,6 +251,7 @@ return(
 
 </ScrollView>
 </View>
+
 <FooterBar/>
 
 </View>

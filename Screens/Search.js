@@ -164,27 +164,7 @@ return(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </ScrollView>
-
-
-
 </View>
 <FooterBar/>
 </View>

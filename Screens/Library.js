@@ -4,10 +4,8 @@ import { useNavigation } from "@react-navigation/native";
 import { styles } from "../stylingSheet/mainStyle";
 import FooterBar from '../Screens/FooterBar';
 
-
-
-export default function Search() {
-    const navigation = useNavigation();
+export default function Search() { 
+  const navigation = useNavigation();
 
     
   return (
@@ -45,7 +43,9 @@ export default function Search() {
        <View style={{margin:15,}}>
        <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>David Alanyo </Text>
        <Text style={{color:'white',fontSize:16,fontWeight:'100',}}> Developer </Text>
-   
+      
+
+
     </View>
 </View>
 <View style={styles.Library_Bar2}>
@@ -92,10 +92,9 @@ export default function Search() {
         <Image source={require('../Imagebanner/mashmello.jpeg')} style={{width:80,height:80,borderRadius:100,resizeMode:'cover',margin:10}}/>
       </TouchableOpacity>
        <View style={{margin:15,}}>
-       <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>Ada Ehi</Text>
-       <Text style={{color:'white',fontSize:16,fontWeight:'100',}}>Artist </Text>
-    </View>
+      </View>
 </View>
+
 
    </ScrollView>
    </View>
