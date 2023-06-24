@@ -393,14 +393,10 @@ borderWidth:2
         flexDirection:'row',
         alignItems:"center"
        },
-       manu:{color:'white',fontSize:29},
-
-
-
-       
+       manu:{color:'white',fontSize:29}, 
   modeEffect :{
   flex:1,
-  backgroundColor:'#041a23',
+  backgroundColor:'#0b2630',
   justifyContent:'center',
   flexDirection:'row'
   
@@ -408,9 +404,81 @@ borderWidth:2
   slidein:{
     width:350,
     height:350,
-    borderRadius:10
+    borderRadius:10,
+    marginTop:50
    
+  },
+  dash:{
+    height:5,
+    width:30, 
+    backgroundColor: '#fcfcfc',
+    borderRadius:10,
+    justifyContent:'center',
+  flexDirection:'row',
+  margin:10
+  },
+  dash1:{
+  justifyContent:'center',
+  flexDirection:'row',
+  marginBottom:20
+  },
+  title_m:{
+    justifyContent:'space-between',
+    flexDirection:'row',
+  },
+  text_title:{
+    color:'white',
+    fontSize:15,
+    fontWeight:'600',
+    marginBottom:10
+    
+    
+  },
+  title_head:{
+    justifyContent:'space-between',
+    flexDirection:"row",
+  },
+  text_title1:{
+    color:'white',
+    fontSize:28,
+    fontWeight:'600',
+    marginTop:30
+    
+    
+  },
+  bar: {
+    height: 20,
+    backgroundColor: '#333',
+    borderRadius: 10,
+  },
+  pro_bar:{
+    justifyContent:"center",
+    flexDirection:'row',
+    marginTop:30
+  },
+  pro_bar1:{
+    justifyContent:'space-between',
+    flexDirection:'row',
+    margin:10
+    
+  },
+  bar_color:{
+    color:'#aa9e9e',
+    fontSize:10,
+    
+  },
+  control_bar:{
+    justifyContent:'space-between',
+    flexDirection:'row',
+    margin:10
+  },
+  control:{
+    width:35,
+    height:35,
+    margin:40
   }
+
+
     
 
  

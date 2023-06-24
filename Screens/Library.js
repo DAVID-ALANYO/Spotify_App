@@ -43,10 +43,9 @@ export default function Search() {
        <View style={{margin:15,}}>
        <Text style={{color:'white',fontSize:20,fontWeight:'300',}}>David Alanyo </Text>
        <Text style={{color:'white',fontSize:16,fontWeight:'100',}}> Developer </Text>
-      
-
 
     </View>
+   
 </View>
 <View style={styles.Library_Bar2}>
       <TouchableOpacity>
